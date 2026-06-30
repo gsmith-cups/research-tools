@@ -10,6 +10,7 @@ A small Python script that checks whether all of your bibliography keys appear i
 1. Reads your bib keys, either from a `.bib` file or a plain text list (comma or newline separated). This can be copied from a spreadsheet.
 2. Scans a `.tex` file for every `\cite{...}` block and collects all the keys inside them.
 3. Compares the two lists and reports any bib keys that are **not** found in the table.
+4. Checks each table row's stated `# of Papers` against the actual number of citation keys listed in that row's `\cite{...}`, and reports any rows where they don't match.
 
 ### Usage
 
@@ -25,4 +26,4 @@ Both `--table` and one of `--bib` / `--bib_names_file` are required. Running the
 
 ### Output
 
-Prints a summary (number of keys checked, number found in the table, number missing) followed by a list of any bib names missing from the table, if any.
+Prints a summary (number of keys checked, number found in the table, number missing) followed by a list of any bib names missing from the table, if any. It also prints any rows where the stated `# of Papers` count doesn't match the number of citation keys actually listed in that row.
