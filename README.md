@@ -7,7 +7,7 @@ A small Python script that checks whether all of your bibliography keys appear i
 
 ### What it does
 
-1. Reads your bib keys, either from a `.bib` file or a plain text list (comma or newline separated).
+1. Reads your bib keys, either from a `.bib` file or a plain text list (comma or newline separated). This can be copied from a spreadsheet.
 2. Scans a `.tex` file for every `\cite{...}` block and collects all the keys inside them.
 3. Compares the two lists and reports any bib keys that are **not** found in the table.
 
