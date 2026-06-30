@@ -15,10 +15,10 @@ A small Python script that checks whether all of your bibliography keys appear i
 
 ```bash
 # From a .bib file
-python check_bib_names.py --bib refs.bib --table table.tex
+python bib_names.py --bib refs.bib --table table.tex
 
 # From a plain text list of names
-python check_bib_names.py --bib_names_file names.txt --table table.tex
+python bib_names.py --bib_names_file names.txt --table table.tex
 ```
 
 Both `--table` and one of `--bib` / `--bib_names_file` are required. Running the script with no arguments prints full usage instructions.
